@@ -1,7 +1,7 @@
 'use client'
 import useStore from '@/stores/useStore';
 import React, { useState } from 'react';
-import { containerStyles, headingStyles, balanceStyles, inputStyles, buttonStyles, divStyle } from './styles';
+import { pixContainerStyles, pixHeadingStyles, balanceStyles, inputStyles, buttonStyles, divStyle } from '../../styles/styles';
 
  const PixPage = () => {
    const {count, increment, clear} = useStore()
@@ -10,8 +10,8 @@ import { containerStyles, headingStyles, balanceStyles, inputStyles, buttonStyle
   
 
   return (
-    <section style={containerStyles}>
-      <h1 style={headingStyles}>Pix</h1>
+    <section style={pixContainerStyles}>
+      <h1 style={pixHeadingStyles}>Pix</h1>
       <div style={divStyle}>
       <p style={balanceStyles}>Saldo: {count}</p>
        <button type="button" onClick={increment} style={buttonStyles}>

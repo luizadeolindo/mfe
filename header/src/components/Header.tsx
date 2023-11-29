@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useStore } from 'consumer/stores/useStore'
+import useStore from 'consumer/stores/useStore' 
 import { headerStyles } from './styles';
 type ShowPageFunction = (page: string) => void;
 

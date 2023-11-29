@@ -19,9 +19,7 @@ module.exports = {
              consumer: `consumer@http://localhost:3001/_next/static/chunks/remoteEntry.js`,
           },
           shared: {
-            // shared_state: {
-            //   requiredVersion: '1.0.0'
-            // }
+           
           },
         })
       );

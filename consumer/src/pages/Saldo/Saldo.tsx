@@ -1,5 +1,5 @@
 import { useStore } from '../..';
-import { availableBalanceStyles, boldTextStyles, containerStyles, flexContainerStyles, headingStyles } from './styles';
+import { availableBalanceStyles, boldTextStyles, containerStyles, flexContainerStyles, headingStyles } from '../../styles/styles';
 
 
 const Saldo = () => {

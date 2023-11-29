@@ -6,6 +6,7 @@ module.exports = {
   webpack(config, options) {
     const { webpack } = options;
     Object.assign(config.experiments, { topLevelAwait: true });
+     
     if (!options.isServer) {
       //config.cache=false
       config.plugins.push(
@@ -16,16 +17,14 @@ module.exports = {
           },
           exposes: {
             './stores/useStore': './src/stores/useStore.ts'
-           // './src': './src'
+          
           },
           
           filename: "static/chunks/remoteEntry.js",
 
           shared: {
-        //   shared_state: {
-        //   requiredVersion: '1.0.0'
-        // },
-          },
+          
+        },
         })
       );
     }
