@@ -1,9 +1,9 @@
 'use client'
 import dynamic from "next/dynamic";
 import { useState } from 'react';
-import { Saldo } from './Saldo';
-import {PixPage} from './PixPage';
-import useStore from '@/stores';
+import  Saldo  from './Saldo/Saldo';
+import PixPage from './Pix/PixPage';
+
 
 const Header = dynamic(
   () => import("header/components/Header").then((m) => m.Header),
@@ -18,7 +18,7 @@ export default function Home() {
   const showPage = (page: string) => {
     setCurrentPage(page);
   };
-  console.log(currentPage)
+  
   return (
     <>
       {/* @ts-ignore */}

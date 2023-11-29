@@ -1,53 +1,13 @@
 'use client'
-import useStore from '@/stores';
+import useStore from '@/stores/useStore';
 import React, { useState } from 'react';
+import { containerStyles, headingStyles, balanceStyles, inputStyles, buttonStyles, divStyle } from './styles';
 
-export const PixPage = () => {
+ const PixPage = () => {
    const {count, increment, clear} = useStore()
   const [receiverName, setReceiverName] = useState('');
   const [amount, setAmount] = useState('');
-  const containerStyles = {
-    margin: '16px auto',
-    padding: '40px',
-    backgroundColor: 'white',
-    borderRadius: '8px',
-    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
-    maxWidth: '600px',
-  };
-
-  const headingStyles = {
-    fontSize: '1.5rem',
-    fontWeight: 'bold',
-    marginBottom: '1.5rem',
-  };
-
-  const balanceStyles = {
-    fontSize: '1rem',
-    marginBottom: '1rem',
-  };
-
-  const inputStyles = {
-    padding: '8px',
-    marginBottom: '1rem',
-    border: '1px solid #ccc',
-    borderRadius: '4px',
-    display: "block", 
-    width: '100%'
-  };
-
-  const buttonStyles = {
-    padding: '8px',
-    backgroundColor: '#f8821d',
-    color: 'white',
-    borderRadius: '4px',
-    cursor: 'pointer',
-    border: 'none',
-  };
-  const divStyle = {
-    display: 'flex',
-    gap: '8px', 
-    alignItems: 'center'
-  };
+  
 
   return (
     <section style={containerStyles}>
@@ -88,4 +48,4 @@ export const PixPage = () => {
   );
 };
 
-
+export default PixPage
