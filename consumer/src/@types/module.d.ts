@@ -1,1 +1,1 @@
-declare module "header/component/Header";
+declare module "header/components/Header";

@@ -14,9 +14,18 @@ module.exports = {
           remotes: {
             header: `header@http://localhost:3000/_next/static/chunks/remoteEntry.js`,
           },
+          exposes: {
+           //  './stores': './src/stores/index.ts'
+            // './src': './src'
+          },
+          
           filename: "static/chunks/remoteEntry.js",
 
-          shared: {},
+          shared: {
+        //   shared_state: {
+        //   requiredVersion: '1.0.0'
+        // },
+          },
         })
       );
     }
